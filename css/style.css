@@ -211,6 +211,14 @@ ul.plain li, ol.plain li {
   font-size: 15px;
 }
 
+.pub-list li.pub-flagship {
+  background: var(--bg-alt);
+  border-left: 3px solid var(--accent);
+  padding: 8px 12px;
+  margin-left: -12px;
+  border-radius: 0 4px 4px 0;
+}
+
 .pub-list .pub-year {
   color: var(--text-muted);
   font-size: 13px;
