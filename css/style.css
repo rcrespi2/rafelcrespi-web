@@ -143,6 +143,13 @@ nav.site-nav a:hover {
   border-bottom: 1px solid var(--border);
 }
 
+.feed-item.feed-flagship {
+  background: var(--bg-alt);
+  border-left: 3px solid var(--accent);
+  padding-left: 18px;
+  border-radius: 0 4px 4px 0;
+}
+
 .feed-item:first-of-type { padding-top: 4px; }
 
 .feed-date {
