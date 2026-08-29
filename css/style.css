@@ -90,12 +90,20 @@ nav.site-nav a:hover {
 }
 
 .hero img.portrait {
-  width: 148px;
-  height: 148px;
-  border-radius: 50%;
+  width: 170px;
+  height: 300px;
   object-fit: cover;
+  object-position: top center;
   flex-shrink: 0;
-  border: 1px solid var(--border);
+  border: none;
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, black 14%, black 86%, transparent),
+    linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent, black 14%, black 86%, transparent),
+    linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  mask-composite: intersect;
 }
 
 .hero h1 {
